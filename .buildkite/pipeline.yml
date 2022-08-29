@@ -2,4 +2,4 @@ steps:
   - trigger: "release-pipeline"
   label: "Testing generic release pipeline"
   build:
-    app-name: node-js-docker-example
+    app_name: node-js-docker-example
