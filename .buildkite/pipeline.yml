@@ -1,6 +1,5 @@
 steps:
-  - name: ":node:"
-    command: npm test
-    plugins:
-      - docker-compose#v3.9.0:
-          run: app
+  - trigger: "release-pipeline"
+  label: "Testing generic release pipeline"
+  build:
+    app-name: node-js-docker-example
